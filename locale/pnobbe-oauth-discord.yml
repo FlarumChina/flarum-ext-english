@@ -9,4 +9,4 @@ pnobbe-oauth-discord:
 
   forum:
     log_in:
-      with_discord_button: "透过 Discord 帐号登录"
+      with_discord_button: "通过 Discord 帐号登录"

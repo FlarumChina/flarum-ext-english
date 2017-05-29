@@ -51,7 +51,14 @@ flagrow-upload:
                 username: 用户名
                 password: 密码
                 region: 区域
-        buttons:
+            disable-hotlink-protection:
+                title: 关闭 hotlink
+                toggle: 关闭
+            disable-download-logging:
+                title: 关闭下载
+                toggle: 关闭
+
+   buttons:
             save: 保存更改
         help_texts:
             description: >
@@ -62,3 +69,8 @@ flagrow-upload:
                 您可以选择是否在上传图片前调整图片大小，您也可以设置图片最大长宽（px），图片大小调整将会保持图片长宽比例
             watermark: >
                 在图片上传时添加水印，仅支持非 gif 图片
+            disable-hotlink-protection: >
+                盗链保护防止来自其他网站的访问。
+                目前的方法需要一个CSRF令牌和文章ID。
+            disable-download-logging: >
+                禁用记录每个下载由您的论坛用户。允许您查看下载次数（即将来到）。
