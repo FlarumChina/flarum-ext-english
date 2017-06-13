@@ -7,6 +7,9 @@ flagrow-bazaar:
         nav:
             title: Bazaar
             description: 应用市场.
+        header:
+            extensions: 浏览插件
+            tasks: 任务历史
         modal:
             settings:
                 title: Flagrow Bazaar
@@ -43,7 +46,7 @@ flagrow-bazaar:
                 remove_favorite_button: "不喜欢"
             extension:
                 installed: 扩展已安装
-                installed: 扩展已启用
+                enabled: 扩展已启用
                 vendor: 由 {vendor} 开发
                 favorited: 喜欢过
                 outdated: "你的插件已过时请升级 {new}"
