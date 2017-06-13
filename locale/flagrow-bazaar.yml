@@ -3,7 +3,7 @@
 flagrow-bazaar:
     admin:
         loader:
-            is_loading: Processing..
+            is_loading: 加载中..
         nav:
             title: Bazaar
             description: 应用市场.
