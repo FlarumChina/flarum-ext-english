@@ -40,5 +40,5 @@ flagrow-masquerade:
             icon: Icon
             icon-help: >
                 在用户输入的字段前面显示一个图标。
-                查看支持 <a>FontAwesome website</a>. Use 不要使用"fa-"
+                查看支持 <a>FontAwesome website</a> 不要使用"fa-"
             force-user-to-completion: 强制用户完成个人信息的填写
