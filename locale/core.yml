@@ -38,7 +38,9 @@ core:
       all_discussions_label: => core.ref.all_discussions
       default_language_heading: 默认语言
       forum_description_heading: 站点描述
-      forum_description_text: 通过几个短语或句子描述你的站点，它将作为 Meta 标记，并且被搜索引擎抓取。
+      forum_description_text: 通过几个短语或句子描述你的站点，它将作为 Meta/description 标记，并且被搜索引擎抓取。
+      forum_description_heading: 站点关键词
+      forum_description_text: 通过几个关键词描述你的站点，它将作为 Meta/keywords 标记，并且被搜索引擎抓取。(请使用英文逗号风格)
       forum_title_heading: 站点名称
       home_page_heading: 站点首页
       home_page_text: "选择一个页面作为站点首页。如果输入了自定义值，请使用基于站点根目录的相对路径。"
