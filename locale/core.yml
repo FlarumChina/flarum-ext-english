@@ -269,7 +269,12 @@ core:
 
     # These translations are used in the header and session dropdown menu.
     header:
+<<<<<<< HEAD
       admin_button: 管理后台
+=======
+      admin_button: Administration
+      back_to_index_tooltip: Back to discussion list
+>>>>>>> 5b14897cdd4573ef44ac4adf5d892cbcb2b84b1e
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
       profile_button: 我的资料
@@ -299,8 +304,13 @@ core:
       forgot_password_link: "忘记了密码？"
       invalid_login_message: 这个登入信息有误！
       password_placeholder: => core.ref.password
+<<<<<<< HEAD
       remember_me_label: 两周内自动登录
       sign_up_text: "还没有注册？ <a>注册</a>"
+=======
+      remember_me_label: Remember Me
+      sign_up_text: "Don't have an account? <a>Sign Up</a>"
+>>>>>>> 5b14897cdd4573ef44ac4adf5d892cbcb2b84b1e
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
       username_or_email_placeholder: 用户名 或 邮箱
@@ -343,7 +353,11 @@ core:
 
     # These translations are used by the rename discussion modal.
     rename_discussion:
+<<<<<<< HEAD
       title: 输入新的标题
+=======
+      title: Rename Discussion
+>>>>>>> 5b14897cdd4573ef44ac4adf5d892cbcb2b84b1e
       submit_button: => core.ref.rename
 
     # These translations are used by the search results dropdown list.
