@@ -10,7 +10,7 @@ reflar-reactions:
         react_posts_label: 对帖子表态
   
     nav:
-      desc: 自定义
+      desc: 对帖子表态插件进行管理和设置
 
     page:
       reactions:
