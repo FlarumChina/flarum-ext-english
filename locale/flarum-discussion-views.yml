@@ -1,0 +1,18 @@
+# https://github.com/MichaelBelgium/flarum-discussion-views/blob/master/locale/en.yml
+core:
+  forum:
+    index_sort:
+      popular_button: 最多浏览
+      unpopular_button: 最少浏览
+
+flarum_discussion_views:
+  forum:
+    modal_resetviews:
+      title: 重新设置浏览数
+      submit: 提交
+      label: 设置浏览数
+    discussion_controls:
+      resetviews_button: 设置浏览数
+  admin:
+      permissions:
+          reset_views_label: 设置浏览数
