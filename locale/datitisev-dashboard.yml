@@ -23,7 +23,7 @@ datitisev-dashboard:
       graph:
         users: 用户
         discussions: 主题
-        posts: 贴文
+        posts: 文章
 
       flarum_version: "Flarum {version}"
       php_version: "PHP {version}"
@@ -40,9 +40,10 @@ datitisev-dashboard:
 
     ## Settings for the extension
     settings:
+      title: 仪表盘设置
 
       github_heading: Github
-      github_description: "The Client ID and Client Secret of a Github app are necessary so you do not exceed the API rate limit.<br\/\><br\/\> Create an app at Github Developers (https://github.com/settings/developers)<br\/\> and introduce the credentials in the extension settings."
+      github_description: "Github APP 的客户端ID和客户端密码是必要的，请不要超过API速率限制。<br\/\><br\/\> 在 Github Developers 创建 (https://github.com/settings/developers)<br\/\> 然后在设置中加入。"
       clientId_label: Client Id
       clientSecret_label: Client Secret
 
