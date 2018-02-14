@@ -1,7 +1,5 @@
 # https://github.com/flagrow/upload/blob/master/locale/en.yml
 
-# https://github.com/flagrow/upload/blob/master/locale/en.yml
-
 flagrow-upload:
     forum:
         buttons:
@@ -13,7 +11,21 @@ flagrow-upload:
     admin:
         nav:
             file_upload_button: 文件上传
-        permissions:
+    admin:
+        templates:
+            image: 默认图片下载模板
+            image_description: >
+                 显示图像的缩略图和下载按钮。
+                 允许统计和防盗链。
+            file: 默认文件下载模板
+            file_description: >
+                显示文件名称和一些常规信息。 
+                允许统计和防盗链。
+            image-preview: 完整的图像展示模板
+            image-preview_description: >
+                显示完整图像。 
+                没有下载功能，没有统计，没有防盗链。
+permissions:
             upload_label: 文件上传
             download_label: 下载文件
         upload_methods:
