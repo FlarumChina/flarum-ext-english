@@ -25,7 +25,7 @@ flagrow-upload:
             image-preview_description: >
                 显示完整图像。 
                 没有下载功能，没有统计，没有防盗链。
-permissions:
+        permissions:
             upload_label: 文件上传
             download_label: 下载文件
         upload_methods:
