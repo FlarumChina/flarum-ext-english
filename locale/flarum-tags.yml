@@ -13,7 +13,7 @@ flarum-tags:
 
     # These translations are used in the Edit Tag modal dialog.
     edit_tag:
-      color_label: 颜色
+      color_label: => core.ref.color
       delete_tag_button: 删除分类
       delete_tag_confirmation: "你确定删除这个分类吗？删除后该分类中的话题不会被删除。"
       description_label: 描述
@@ -71,6 +71,9 @@ flarum-tags:
     discussion_controls:
       edit_tags_button: 修改分类
 
+    header:
+      back_to_tags_tooltip: Back to Tag List
+
     # These translations are used on the index page, peripheral to the discussion list.
     index:
       more_link: 更多...
@@ -79,8 +82,8 @@ flarum-tags:
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      added_tags_text: "{username} 添加到 {tagsAdded}"
       added_and_removed_tags_text: "{username} 添加到 {tagsAdded} 并从 {tagsRemoved} 移除"
+      added_tags_text: "{username} 添加到 {tagsAdded}"
       removed_tags_text: "{username} 从 {tagsRemoved} 移除"
       tags_text: "{tags} 分类|{tags} 分类"
 

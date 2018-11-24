@@ -9,8 +9,4 @@
  * file that was distributed with this source code.
  */
 
-use Flarum\Extend;
-
-return [
-    new Extend\Locale(__DIR__)
-];
+return new Flarum\Extend\LanguagePack;

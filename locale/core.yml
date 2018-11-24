@@ -20,15 +20,15 @@ core:
       colors_heading: 颜色
       colors_text: "选择两种颜色作为主题色。第一种将用于突出显示的颜色，第二种将作为背景等元素的色调。"
       custom_footer_heading: 自定义底部 HTML
-      custom_footer_text: "在页面底端（FlarumChina 本身的头部上方）添加 HTML 代码。"
+      custom_footer_text: => core.ref.custom_footer_text
       custom_header_heading: 自定义头部 HTML
-      custom_header_text: "在页面顶端（FlarumChina 本身的头部上方）添加 HTML 代码。"
+      custom_header_text: => core.ref.custom_header_text
       custom_styles_heading: 自定义样式
       custom_styles_text: 添加 LESS/CSS 代码以生成自定义样式作为默认外观。
       dark_mode_label: 夜间模式
       edit_css_button: 编辑样式代码
-      edit_footer_button: 编辑自定义底部 HTML
-      edit_header_button: 编辑自定义头部 HTML
+      edit_footer_button: => core.ref.custom_footer_title
+      edit_header_button: => core.ref.custom_header_title
       enter_hex_message: 请输入一个十六进制颜色代码。
       favicon_heading: Favicon
       favicon_text: 上传论坛的缩略图标（显示在标签页上）。
@@ -57,7 +57,8 @@ core:
 
     # These translations are used in the Dashboard page.
     dashboard:
-      help_link: 获得帮助
+      clear_cache_button: 清空缓存
+      tools_button: 工具
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
@@ -67,28 +68,28 @@ core:
 
     # These translations are used in the Edit Custom Footer modal dialog.
     edit_footer:
-      customize_text: "添加HTML到页面最下方显示。"
+      customize_text: => core.ref.custom_footer_text
       submit_button: => core.ref.save_changes
-      title: 编辑自定义页脚
+      title: => core.ref.custom_footer_title
 
     # These translations are used in the Edit Group modal dialog.
     edit_group:
-      color_label: 颜色
-      delete_button: 删除用户组
-      delete_confirmation: "确定删除这个用户组？该用户组中的用户不会被删除。"
-      icon_label: 图标
-      icon_text: "输入任意一个 <a>FontAwesome</a> 图标名称，<em>无需</em>添加 <code>fa-</code> 前缀。"
-      name_label: 名称
-      plural_placeholder: 用户组 (例如 Mods)
-      singular_placeholder: 单个用户 (例如 Mod)
+      color_label: => core.ref.color
+      delete_button: Delete Group
+      delete_confirmation: "Are you sure you want to delete this group? The group members will NOT be deleted."
+      icon_label: Icon
+      icon_text: "Enter the name of any <a>FontAwesome</a> icon class, <em>including</em> the <code>fas fa-</code> prefix."
+      name_label: Name
+      plural_placeholder: Plural (e.g. Mods)
+      singular_placeholder: Singular (e.g. Mod)
       submit_button: => core.ref.save_changes
       title: 新用户组
 
     # These translations are used in the Edit Custom Header modal dialog.
     edit_header:
-      customize_text: "在页面顶端（Flarum 本身的头部上方）添加 HTML 代码。"
+      customize_text: => core.ref.custom_header_text
       submit_button: => core.ref.save_changes
-      title: 自定义 HTML 头
+      title: => core.ref.custom_header_title
 
     # These translations are used in the email page of the admin interface.
     email:
@@ -143,7 +144,8 @@ core:
       delete_discussions_forever_label: 永久删除话题
       delete_discussions_label: 删除话题
       delete_posts_forever_label: 永久删除回复
-      edit_and_delete_posts_label: 编辑或删除回复
+      delete_posts_label: 删除回复
+      edit_posts_label: 编辑回复
       global_heading: 全局
       moderate_heading: 管理相关
       new_group_button: 新用户组
@@ -175,7 +177,7 @@ core:
 
     # These translations are used in image upload buttons.
     upload_image:
-      remove_button: 移除
+      remove_button: => core.ref.remove
       upload_button: 选择图片...
 
   # Translations in this namespace are used by the forum user interface.
@@ -183,8 +185,8 @@ core:
 
     # These translations are used in the Change Email modal dialog.
     change_email:
-      confirmation_message: => core.ref.confirmation_email_sent
       confirm_password_placeholder: => core.ref.confirm_password
+      confirmation_message: => core.ref.confirmation_email_sent
       dismiss_button: => core.ref.okay
       incorrect_password_message: 这个密码有误!
       submit_button: => core.ref.save_changes
@@ -348,14 +350,14 @@ core:
 
     # These translations are used by the rename discussion modal.
     rename_discussion:
-      title: 输入新的标题
       submit_button: => core.ref.rename
+      title: Rename Discussion
 
     # These translations are used by the search results dropdown list.
     search:
       all_discussions_button: '所有话题中搜索 "{query}"'
       discussions_heading: => core.ref.discussions
-      users_heading: 用户
+      users_heading: => core.ref.users
 
     # These translations are used in the Settings page.
     settings:
@@ -372,8 +374,8 @@ core:
 
     # These translations are used in the Sign Up modal dialog.
     sign_up:
-      email_placeholder: => core.ref.email
       dismiss_button: => core.ref.okay
+      email_placeholder: => core.ref.email
       log_in_text: "已经注册过了？ <a>登入</a>"
       password_placeholder: => core.ref.password
       submit_button: => core.ref.sign_up
@@ -383,15 +385,16 @@ core:
 
     # These translations are used in the user profile page and profile popup.
     user:
-      avatar_remove_button: 移除
+      avatar_remove_button: => core.ref.remove
       avatar_upload_button: 上传
       avatar_upload_tooltip: 上传新头像
       discussions_link: => core.ref.discussions
       in_discussion_text: "{discussion}"
       joined_date_text: "加入于 {ago}"
       online_text: 在线
-      posts_load_more_button: => core.ref.load_more
+      posts_load_more_button: 没有更多的帖子
       posts_link: => core.ref.posts
+      posts_load_more_button: => core.ref.load_more
       settings_link: => core.ref.settings
 
     # These translations are found on the user profile page (admin function).
@@ -414,10 +417,6 @@ core:
     badge:
       hidden_tooltip: 隐藏
 
-    # These translations are used to modify usernames.
-    username:
-      deleted_text: "[已销户]"
-
     # These translations are displayed as error messages.
     error:
       generic_message: "网络不太顺，请再试一次。"
@@ -435,6 +434,10 @@ core:
       glue_text: ", "
       three_text: "{first}, {second}, 还有 {third}"
       two_text: "{first} 和 {second}"
+
+    # These translations are used to modify usernames.
+    username:
+      deleted_text: "[deleted]"
 
   # Translations in this namespace are used in views other than Flarum's normal JS client.
   views:
@@ -537,6 +540,10 @@ core:
     change_password: 更改密码
     confirm_password: 确认密码
     confirmation_email_sent: "我们已经发送了一封邮件至 {email}，请打开它并完成账号激活。"
+    custom_footer_text: 添加 HTML 加入于页脚
+    custom_footer_title: 自定底部
+    custom_header_text: 添加 HTML 加入于页顶
+    custom_header_title: 自定顶部
     delete: 删除
     delete_forever: 永久删除
     discussions: 话题
@@ -552,6 +559,7 @@ core:
     password: 密码
     posts: 帖子                                 # Referenced by flarum-statistics.yml
     previous_page: 上一页
+    remove: 移除
     rename: 更改标题
     reply: 回复                                # Referenced by flarum-mentions.yml
     reset_your_password: 重置密码

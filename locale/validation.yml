@@ -27,6 +27,16 @@ validation:
   exists: "选择的 :attribute 无效"
   file: ":attribute 必须是一个文件"
   filled: "不可以缺少:attribute"
+  gt:
+    numeric: ":attribute 必须大于 :value."
+    file: ":attribute 必须大于 :value 千字节."
+    string: ":attribute 必须多于 :value ."
+    array: ":attribute 必须多于 :value 个项目."
+  gte:
+    numeric: ":attribute 必须大于等于 :value."
+    file: "T:attribute 必须大于等于 :value 千字节."
+    string: ":attribute 必须多于等于 :value 字."
+    array: ":attribute 含有 :value 个项目或者更多."
   image: ":attribute 只能是图像"
   in: "选择的 :attribute 无效"
   in_array: ":attribute 在 :other 中不存在"
@@ -35,6 +45,16 @@ validation:
   ipv4: "这必须是个IPv4地址"
   ipv6: "这必须是个IPv6地址"
   json: ":attribute 必须是有效的 JSON 字符串"
+  lt:
+    numeric: ":attribute 必须小于 :value."
+    file: "T:attribute 必须小于 :value 千字节."
+    string: ":attribute 必须少于 :value 字."
+    array: ":attribute 必须少于 :value 个项目."
+  lte:
+    numeric: ":attribute 必须小于等于 :value."
+    file: "T:attribute 必须小于等于 :value 千字节."
+    string: ":attribute 必须少于等于 :value 字."
+    array: ":attribute 必须少于等于 :value 个项目."
   max:
     numeric: ":attribute 不能超过 :max."
     file: ":attribute 不能大于 :maxKB"
@@ -69,6 +89,7 @@ validation:
   unique: ":attribute 已经存在"
   uploaded: ":attribute 上传失败"
   url: ":attribute 格式无效"
+  uuid: "The :attribute 必须是一个有效的 UUID."
 
   attributes:
     username: 用户名
